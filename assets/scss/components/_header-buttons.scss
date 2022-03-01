@@ -1,0 +1,9 @@
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    @media (max-width: 1350px) {
+        gap: 15px
+    }
+}

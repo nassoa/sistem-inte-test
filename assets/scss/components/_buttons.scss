@@ -1,0 +1,51 @@
+// Buttons
+a,
+.btn {
+    transition: all .3s ease-in-out;
+}
+.btn {
+    border: 2px solid transparent;
+    border-radius: 70px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    &.btn-md {
+        padding: 8px 28px;
+        @media (max-width: 1350px) {
+            padding: 8px 12px;
+        }
+    }
+    &.btn-lg {
+        padding: 12px 28px;
+    }
+    &.btn-xl {
+        padding: 18px 28px;
+    }
+    &.btn-trans-white,
+    &.btn-trans-black {
+        background-color: transparent;
+        text-transform: uppercase;
+    }
+    &.btn-trans-white {
+        border-color: $color-white;
+        color: $color-white;
+    }
+    &.btn-trans-black {
+        border-color: $color-black;
+        color: $color-black;
+        &:hover {
+            background-color: $color-primary;
+            border-color: $color-primary;
+            color: $color-white;
+        }
+    }
+    &.text-norm {
+        text-transform: none;
+    }
+    &.icon {
+        display: inline-block;
+        img, i {
+            margin-right: 10px;
+        }
+    }
+}

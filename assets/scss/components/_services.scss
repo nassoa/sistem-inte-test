@@ -1,0 +1,27 @@
+.services-listing {
+    padding: 0 15px;
+    margin: 48px 0;
+    .service-col {
+        padding: 30px 32px 18px;
+        border: 1px solid $color-grayLight;
+        position: relative;
+        h4 {
+            display: flex;
+            margin-bottom: 18px;
+            align-items: center;
+            justify-content: space-between;
+            .service-button {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 2px solid $color-black;
+            }
+        }
+        ul {
+            padding-left: 15px;
+        }
+    }
+}

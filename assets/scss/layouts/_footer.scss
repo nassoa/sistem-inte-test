@@ -1,0 +1,45 @@
+
+footer {
+    padding: 90px 0 20px;
+    background-color: $color-gray;
+    .foo {
+        &__logo {
+            margin-bottom: 20px;
+        }
+        &__title {
+            margin-bottom: 20px;
+            @include media-breakpoint-down(md) {
+                margin-top: 20px;
+            }
+        }
+        &__socials {
+            display: flex;
+            gap: 24px;
+        }
+    }
+    ul {
+        li {
+            margin-bottom: 10px;
+            a {
+                text-decoration: none;
+                color: $color-black;
+            }
+        }
+        &.contact {
+            li {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.footer {
+    &__copyright {
+        padding: 13px 0;
+        text-align: center;
+        a {
+            color: $color-black;
+            text-decoration: none;
+        }
+    }
+}
